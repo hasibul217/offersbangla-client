@@ -1,11 +1,17 @@
 import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import Dashboard from "./components/Dashboard";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Dashboard />,
+  },
+]);
 
 const App = () => {
-  return (
-    <div className="container mx-auto">
-      <h1 className="text-4xl  underline text-red-700">Hello world!</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
