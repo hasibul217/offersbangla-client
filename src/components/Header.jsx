@@ -32,7 +32,7 @@ const Header = () => {
               whiteSpace: "nowrap",
             }}
           >
-            <p className="text-lg font-semibold antialiased tracking-tight text-white drop-shadow-sm">
+            <p className="text-lg  antialiased tracking-tight text-white drop-shadow-sm">
               আপনার পছন্দের ব্রান্ড এর পণ্যের উপর, সেরা অফারটির খোঁজ পেতে চোখ
               রাখুন
               <span className="text-teal-300 font-extrabold pl-1">
