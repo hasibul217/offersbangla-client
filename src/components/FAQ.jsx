@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -51,26 +51,53 @@ const FAQ = () => {
   };
 
   return (
-    <div className="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <div className="container mx-auto my-10 p-4 bg-white shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-6 border-b-2 border-teal-600 pb-2">
         Frequently Asked Questions
       </h2>
       {faqs.map((faq, index) => (
-        <div key={index} className="border border-gray-200 py-3 mb-3 p-3 rounded shadow-lg">
-          <button
-            onClick={() => toggle(index)}
-            className="w-full flex justify-between items-center text-left text-lg font-medium text-gray-800"
-          >
-            <span>{faq.question}</span>
-            <span className="text-xl">{openIndex === index ? "−" : "+"}</span>
-          </button>
-          {openIndex === index && (
-            <div className="mt-2 text-gray-600 text-base">
-              {faq.answer}
-            </div>
-          )}
-        </div>
+        <AccordionItem
+          key={index}
+          faq={faq}
+          isOpen={openIndex === index}
+          onClick={() => toggle(index)}
+        />
       ))}
+    </div>
+  );
+};
+
+const AccordionItem = ({ faq, isOpen, onClick }) => {
+  const contentRef = useRef(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setHeight(isOpen ? contentRef.current.scrollHeight : 0);
+    }
+  }, [isOpen]);
+
+  return (
+    <div className="py-3 mb-3 p-3 rounded-lg shadow">
+      <button
+        onClick={onClick}
+        className="w-full flex justify-between items-center text-left text-lg font-medium text-gray-800"
+      >
+        <span>{faq.question}</span>
+        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+      </button>
+      <div
+        ref={contentRef}
+        style={{
+          maxHeight: `${height}px`,
+          overflow: "hidden",
+          transition: "max-height 0.3s ease, opacity 0.3s ease",
+          opacity: isOpen ? 1 : 0,
+        }}
+        className="text-gray-600 text-base"
+      >
+        <div className="mt-2">{faq.answer}</div>
+      </div>
     </div>
   );
 };

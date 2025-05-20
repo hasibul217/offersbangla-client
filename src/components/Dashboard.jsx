@@ -9,6 +9,8 @@ import FurnitureOffer from './Feature Offer/FurnitureOffers'
 import ClothingOffer from './Feature Offer/ClothingOffers'
 import ElectronicsOffer from './Feature Offer/ElectronicsOffer'
 import FAQ from './FAQ'
+import Newsletter from './NewsLetter'
+import Footer from './Footer'
 
 const Dashboard = () => {
   return (
@@ -23,6 +25,8 @@ const Dashboard = () => {
       <ElectronicsOffer/>
       <FeaturebrandSlider/>
       <FAQ/>
+      <Newsletter/>
+      <Footer/>
       
     </div>
   )
