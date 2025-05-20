@@ -5,6 +5,10 @@ import CategorySlider from './CategorySlider'
 import HeroSection from './Hero Section/HeroSection'
 import FeatureOffer from './Feature Offer/FeatureOffer'
 import FeaturebrandSlider from './Feature Brand/FeaturebrandSlider'
+import FurnitureOffer from './Feature Offer/FurnitureOffers'
+import ClothingOffer from './Feature Offer/ClothingOffers'
+import ElectronicsOffer from './Feature Offer/ElectronicsOffer'
+import FAQ from './FAQ'
 
 const Dashboard = () => {
   return (
@@ -14,7 +18,12 @@ const Dashboard = () => {
       <CategorySlider/>
       <HeroSection/>
       <FeatureOffer/>
+      <FurnitureOffer/>
+      <ClothingOffer/>
+      <ElectronicsOffer/>
       <FeaturebrandSlider/>
+      <FAQ/>
+      
     </div>
   )
 }

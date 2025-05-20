@@ -7,55 +7,53 @@ import "swiper/css/free-mode";
 import BrandCard from "../BrandCard";
 
 const categories = [
-  {
-    name: "Design",
-    icon: "https://img.freepik.com/free-vector/colorful-abstract-shapes-background_23-2148913649.jpg",
-  },
+  
   {
     name: "Development",
-    icon: "https://img.freepik.com/free-vector/programming-code-background_23-2148864534.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_google-g-icon-202583427.logowik.com.webp",
   },
   {
     name: "Marketing",
-    icon: "https://img.freepik.com/free-vector/marketing-strategy-concept-illustration_114360-1506.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_adobe781.logowik.com.webp",
   },
   {
     name: "Writing",
-    icon: "https://img.freepik.com/free-vector/writing-concept-illustration_114360-1737.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_amazon4327.logowik.com.webp",
   },
   {
     name: "Finance",
-    icon: "https://img.freepik.com/free-vector/business-finance-and-transaction_53876-128105.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_danet2741.logowik.com.webp",
   },
   {
     name: "Photography",
-    icon: "https://img.freepik.com/free-vector/photographer-taking-photo_23-2148531131.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_591_winstar.jpg",
   },
   {
     name: "Education",
-    icon: "https://img.freepik.com/free-vector/online-education-concept-illustration_114360-2833.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_bold-rooster-design-for-food-poultry-businesses3937.logowik.com.webp",
   },
   {
     name: "Health",
-    icon: "https://img.freepik.com/free-vector/doctor-illustration-concept_114360-1173.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_food-delivery-scooter-person-illustration9534.logowik.com.webp",
   },
   {
     name: "Music",
-    icon: "https://img.freepik.com/free-vector/music-concept-illustration_114360-1605.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_google-g-icon-202583427.logowik.com.webp",
   },
   {
     name: "Travel",
-    icon: "https://img.freepik.com/free-vector/travel-concept-illustration_114360-2586.jpg",
+    icon: "https://logowik.com/content/uploads/images/t_amazon4327.logowik.com.webp",
   },
 ];
 
 
+
 const FeaturebrandSlider = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto py-2">
         <span className="mb-5 text-lg font-semibold text-teal-700">Feature Brand</span>
       <Swiper
-        slidesPerView={7}
+        slidesPerView={8}
         spaceBetween={20}
         freeMode={true}
         loop={true}

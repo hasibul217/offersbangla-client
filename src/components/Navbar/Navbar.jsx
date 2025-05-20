@@ -5,7 +5,7 @@ import NavSearchbar from "./NavSearchbar";
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-300 h-16 flex items-center">
+    <div className="bg-gray-300 h-16 flex items-center sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Left side: NavCategories + NavItems */}
         <div className="flex items-center gap-20">

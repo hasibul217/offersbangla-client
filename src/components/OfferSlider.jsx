@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // components/ReusableSlider.jsx
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,7 +21,7 @@ const OfferSlider = ({
   spaceBetween = 20,
   breakpoints = defaultBreakpoints,
   loop = true,
-  autoplayDelay = 5000,
+  autoplayDelay = 4000,
 }) => {
   return (
     <Swiper
