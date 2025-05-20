@@ -4,6 +4,9 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer'
 import OfferCoverImage from './OfferCoverImage'
 import OfferDescription from './OfferDescription'
+import OfferQR from './OfferQR'
+import ShareOffer from './ShareOffer'
+import RelatedOffer from './RelatedOffer'
 
 
 const offerData = {
@@ -27,7 +30,11 @@ const OfferDetails = () => {
       <Navbar/>
       <div className='container mx-auto py-2'>
         <OfferCoverImage offer={offerData}/>
+       
+        
         <OfferDescription offer={offerData}/>
+
+        <RelatedOffer/>
         
       </div>
       <Footer/>

@@ -4,7 +4,7 @@ import { Clock } from "lucide-react";
 
 const OfferDescription = ({ offer }) => {
   return (
-    <div className=" mt-4 grid grid-cols-1 md:grid-cols-7 gap-6">
+    <div className=" mt-4 grid grid-cols-1 md:grid-cols-7 gap-6 mb-5">
       {/* Left section (could be image or empty for now) */}
 
       {/* Right section: Offer details */}
