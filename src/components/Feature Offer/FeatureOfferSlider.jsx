@@ -5,6 +5,8 @@ import OfferCard from "../OfferCard";
 import OfferSlider from "../OfferSlider";
 import OfferType from "../OfferType";
 
+import { Link } from "react-router-dom";
+
 const slides = [
   {
     image:
@@ -82,12 +84,14 @@ const FeatureOfferSlider = () => {
       <OfferSlider
         slides={slides}
         renderSlide={(slide) => (
-          <OfferCard
-            image={slide.image}
-            brand={slide.brand}
-            text={slide.text}
-            discount={slide.discount}
-          />
+          <Link to={`/offer_details`}>
+            <OfferCard
+              image={slide.image}
+              brand={slide.brand}
+              text={slide.text}
+              discount={slide.discount}
+            />
+          </Link>
         )}
         // Optional: override default breakpoints
         breakpoints={{
