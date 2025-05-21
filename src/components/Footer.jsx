@@ -26,7 +26,7 @@ export default function Footer() {
             <span key={item} className="flex items-center gap-4">
               <a
                 href="#"
-                className="hover:text-blue-600 transition duration-200"
+                className="hover:text-teal-600 transition duration-200"
               >
                 {item}
               </a>

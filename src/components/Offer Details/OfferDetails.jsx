@@ -7,6 +7,7 @@ import OfferDescription from './OfferDescription'
 import OfferQR from './OfferQR'
 import ShareOffer from './ShareOffer'
 import RelatedOffer from './RelatedOffer'
+import BrandDetailTab from '../Brand Detail Tab/BrandDetailTab'
 
 
 const offerData = {
@@ -25,16 +26,18 @@ const offerData = {
 
 const OfferDetails = () => {
   return (
-    <div>
+    <div className=''>
       <Header/>
       <Navbar/>
-      <div className='container mx-auto py-2'>
+      <div className='container mx-auto py-4'>
         <OfferCoverImage offer={offerData}/>
        
         
         <OfferDescription offer={offerData}/>
 
         <RelatedOffer/>
+
+        <BrandDetailTab/>
         
       </div>
       <Footer/>

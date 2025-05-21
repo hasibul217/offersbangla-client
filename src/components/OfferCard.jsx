@@ -3,7 +3,7 @@ import React from "react";
 const OfferCard = ({ image, brand, text, discount }) => {
   return (
     <div className="bg-gray-100 rounded shadow-md hover:shadow-xl transition duration-300 overflow-hidden w-full max-w-sm mx-auto">
-      <div className="relative group rounded-lg overflow-hidden shadow-md aspect-square">
+      <div className="relative group rounded overflow-hidden shadow-md aspect-square">
         <img
           src={image}
           alt={brand}
@@ -15,15 +15,22 @@ const OfferCard = ({ image, brand, text, discount }) => {
         </div>
       </div>
 
-      <div className="p-5 space-y-2">
-        <h3 className="text-base text-gray-600">{brand}</h3>
-        <p className="text-lg font-semibold text-gray-600 line-clamp-2">
-          {text}
-        </p>
+      <div className="flex items-center gap-2">
+        <img
+          className="h-15 w-15 object-cover"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_gsZpUih4WiOFmDBPEHUNLvKFfMzlr6qig&s"
+          alt="Brand Logo"
+        />
+
+        <div className="mt-2">
+          <h3 className="text-base text-red-600 font-semibold">{brand}</h3>
+          <p className="text-lg font-semibold text-gray-600 line-clamp-1">
+            {text}
+          </p>
+        </div>
       </div>
     </div>
   );
 };
-
 
 export default OfferCard;
