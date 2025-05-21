@@ -26,7 +26,7 @@ const socialLinks = [
 
 const ShareOffer = () => {
   return (
-    <div className="mt-4 flex items-center gap-4 flex-wrap">
+    <div className=" flex items-center gap-4 flex-wrap">
       <p className="font-semibold text-base sm:text-lg text-gray-700">
         Share this offer:
       </p>

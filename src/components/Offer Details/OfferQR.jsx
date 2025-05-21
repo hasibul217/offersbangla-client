@@ -10,7 +10,7 @@ const OfferQR = ({ offerUrl }) => {
       {/* Button to open modal */}
       <button
         onClick={() => setIsOpen(true)}
-        className="flex items-center space-x-2 px-4 py-2 mt-2 bg-teal-600 hover:bg-teal-700 text-white rounded shadow transition-colors duration-300"
+        className="flex items-center space-x-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded shadow transition-colors duration-300"
         aria-label="Get QR Code for this offer"
       >
         <QrCode className="w-6 h-6" />

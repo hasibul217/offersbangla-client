@@ -24,13 +24,20 @@ const offerData = {
 };
 
 
+const brandData = {
+  name: "Lorem Inc.",
+  image: "https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?ga=GA1.1.1213500636.1747635848&semt=ais_hybrid&w=740",
+  date: "April 1, 1976"
+};
+
+
 const OfferDetails = () => {
   return (
     <div className=''>
       <Header/>
       <Navbar/>
       <div className='container mx-auto py-4'>
-        <OfferCoverImage offer={offerData}/>
+        <OfferCoverImage offer={offerData} brand={brandData}/>
        
         
         <OfferDescription offer={offerData}/>

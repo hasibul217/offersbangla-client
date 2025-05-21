@@ -1,7 +1,8 @@
 import React from "react";
-import NavCategories from "./NavCategories";
+
 import NavItems from "./NavItems";
 import NavSearchbar from "./NavSearchbar";
+import NavCategoryButton from "./NavCategoryButton";
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Left side: NavCategories + NavItems */}
         <div className="flex items-center gap-20">
-          <NavCategories />
+          <NavCategoryButton/>
           <NavItems />
         </div>
 
